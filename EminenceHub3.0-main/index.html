@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eminence Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Eminence Hub</h1>
+
+    <p class="frase-shadow">Oculto nas sombras, acima de todos.</p>
+
+    <p>Pesquise e cadastre seus animes favoritos.</p>
+
+    <h2>Pesquisar Anime</h2>
+
+    <select id="fonteBusca">
+        <option value="local">Shadow Garden</option>
+        <option value="json">Arquivo JSON</option>
+        <option value="api">API Externa</option>
+    </select>
+
+    <input type="text" id="anime" placeholder="Digite o nome de um anime">
+
+    <button id="botao">Pesquisar</button>
+
+    <div id="resultado"></div>
+
+    <div id="apiAnime"></div>
+
+    <h2>Cadastro de Anime</h2>
+
+    <form id="formAnime">
+
+        <input
+            type="text"
+            id="nomeAnime"
+            placeholder="Nome do anime"
+        >
+
+        <input
+            type="number"
+            id="episodiosCadastro"
+            placeholder="Quantidade de episódios"
+        >
+
+        <button type="submit">
+            Cadastrar
+        </button>
+
+        <p id="mensagem"></p>
+
+    </form>
+
+    <h2>Shadow Garden</h2>
+
+    <div id="listaAnimes"></div>
+
+</div>
+
+<script src="capri.js"></script>
+
+</body>
+</html>
